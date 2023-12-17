@@ -5,18 +5,14 @@ from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_har
     adjusted_rand_score, fowlkes_mallows_score
 from scipy.spatial.distance import cdist
 
-
+# List of dataset file paths
 dataset_files = [
-    'WithLabels/iris.csv',
-    'WithLabels/heartdisease.csv',
-    'WithLabels/wine.csv',
-    'WithLabels/carevaluation.csv',
-    'WithLabels/mushroom.csv',
-    'WithLabels/marketing.csv',
-    'WithLabels/onlineretail.csv',
-    'WithLabels/creditapproval.csv',
-    'WithLabels/purchasingintent.csv',
-    'WithLabels/heartfailure.csv'
+    'Sources/WithLabels/HeartDisease_processed_selected_features.csv',
+    'Sources/WithLabels/BankMarketing_processed_selected_features.csv',
+    'Sources/WithLabels/HeartFailure_processed_selected_features.csv',
+    'Sources/WithoutLabels/CarEvaluation_processed_selected_features.csv',
+    'Sources/WithoutLabels/Mushroom_processed_selected_features.csv',
+    'Sources/WithoutLabels/OnlinePurchasingIntentions_processed_selected_features.csv'
 ]
 
 # Function to perform K-Means clustering and return optimal cluster count and centroids
