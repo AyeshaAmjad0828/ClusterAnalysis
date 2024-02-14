@@ -141,7 +141,7 @@ for dataset in dataset_files:
 
     # Feature scaling
     column_names = data_encoded.columns.tolist() 
-    scaling_type = 'Min-Max'  # Adjust the scaling type as per your requirement
+    scaling_type = 'Min-Max'  
     data_scaled = feature_scaling(data_encoded, scaling_type)
     data_scaled = pd.DataFrame(data_scaled, columns=column_names)
 
